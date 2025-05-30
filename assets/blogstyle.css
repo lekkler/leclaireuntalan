@@ -1,0 +1,333 @@
+:root {
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --dark-color: #121212;
+    --light-color: #ffffff;
+    --gray-color: #f5f5f5;
+    --text-color: #333333;
+    --text-light: #777777;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.main-header {
+    background: var(--light-color);
+    color: var(--dark-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.my-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* Navigation Styles */
+.main-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover, .nav-btn:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
+header {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nav-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-btn:hover, .nav-btn:focus {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .term-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 100px;
+  }
+  
+  .term-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .term-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .term-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .term-text {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .term-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Alternating layout */
+  .prelims .term-content,
+  .prefinal .term-content {
+    flex-direction: row;
+  }
+  
+  .midterm .term-content,
+  .final .term-content {
+    flex-direction: row-reverse;
+  }
+  
+  .summary {
+    background-color: var(--gray-color);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    border-left: 5px solid var(--secondary-color);
+  }
+  
+
+/* Floating Bubbles */
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background: var(--primary-color); /* Keep the primary color */
+    border-radius: 50%;
+    opacity: 0.5; /* Increase opacity to make it darker */
+    animation: rise 15s infinite ease-in;
+    filter: blur(3px); /* Reduce blur for better visibility */
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+    width: 60px;
+    height: 60px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
+/* Footer */
+footer {
+    background-color: var(white);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 25px 0;
+    width: 1100px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+    .header-content,
+    .container,
+    .footer-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .term-content {
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+    .term-image,
+    .term-text {
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        padding: 10px 0;
+    }
+    .my-name {
+        font-size: 1.2rem;
+    }
+    .main-nav .nav-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .term-title {
+        font-size: 1.1rem;
+    }
+    .summary {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    footer {
+        padding: 15px 0;
+        font-size: 0.95rem;
+    }
+}
